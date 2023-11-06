@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    image: ubuntu:latest
+    container_name: my-ubuntu-container
+    command: tail -f /dev/null
+    volumes:
+      - ./src:/src
